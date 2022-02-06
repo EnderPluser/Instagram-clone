@@ -10,8 +10,8 @@
     <application
         android:name=".InstagramOffline"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher_logo"
-        android:roundIcon="@mipmap/ic_launcher_instaclone_round"
+        android:icon="@mipmap/channels4_profile"
+        android:roundIcon="@mipmap/channels4_profile"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
