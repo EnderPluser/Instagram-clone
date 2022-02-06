@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "231107284243",
+    "project_id": "facebook-knockoff",
+    "storage_bucket": "facebook-knockoff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231107284243:android:9b272428465cd8ff91dee6",
+        "android_client_info": {
+          "package_name": "com.me.facebookknockoff"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "231107284243-e81v55r3fdhid7p0emsms5mgd4nkvbf3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.me.facebookknockoff",
+            "certificate_hash": "c5ea617946c4aa2eb9bf414e6e036f60310941e4"
+          }
+        },
+        {
+          "client_id": "231107284243-uvugtvj6hg3767jctnti3679b1cuaqju.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNnMIbUoj4PEbDfTBwLLhYAh1qT3qjbQY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "231107284243-uvugtvj6hg3767jctnti3679b1cuaqju.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231107284243:android:e04f1037f742627791dee6",
+        "android_client_info": {
+          "package_name": "my.insta.androrealm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "231107284243-uvugtvj6hg3767jctnti3679b1cuaqju.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNnMIbUoj4PEbDfTBwLLhYAh1qT3qjbQY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "231107284243-uvugtvj6hg3767jctnti3679b1cuaqju.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
