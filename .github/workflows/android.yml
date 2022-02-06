@@ -19,6 +19,7 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: gradle
-
+    - name: Preparing Android SDK and grant permission for Gradlew command
+      run: sudo apt install android-sdk && chmod +x gradlew
     - name: Build with Gradle
       run: gradle build
