@@ -11,6 +11,11 @@ buildscript {
         // in the individual module build.gradle files
     }
 }
+android {
+      lint {
+          baseline = file("lint-baseline.xml")
+      }
+  }
 
 allprojects {
     repositories {
