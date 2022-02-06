@@ -22,5 +22,7 @@ jobs:
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
+    - name: get SHA1 key
+      run: ./gradlew signingReport
     - name: Build with Gradle
       run: gradle build
