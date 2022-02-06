@@ -11,20 +11,15 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    steps:
     - uses: actions/checkout@v2
-      name: set up JDK 11
 
-    - name: Setup Android SDK
-      uses: android-actions/setup-android@v2
+- name: Set up JDK 1.8
+  uses: actions/setup-java@v1
+  with:
+    java-version: 1.8
 
-    - name: Setup JDK 11
-    - uses: actions/setup-java@v2
-      with:
-        java-version: '11'
-        distribution: 'temurin'
-        cache: gradle
-    - name: Preparing Android SDK and grant permission for Gradlew command
-      run: sudo apt install android-sdk && chmod +x gradlew
+- name: Setup Android SDK
+  uses: android-actions/setup-android@
+
     - name: Build with Gradle
       run: ./gradlew build
