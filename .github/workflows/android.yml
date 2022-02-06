@@ -19,6 +19,8 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: gradle
+    - name: lint
+      run: ./gradlew lintDebug
 
     - name: Build with Gradle
       run: gradle build
