@@ -1,8 +1,9 @@
 workflows:
   my-workflow:
+     name: Apk Build
+     instance_type: mac_mini
     scripts:
       - name: Build Android APK
-        working_directory: /usr/bin/git/Instagram-clone
         script: ./gradlew assembleRelease
     artifacts:
       - app/build/outputs/bruh.apk
