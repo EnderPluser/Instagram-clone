@@ -5,5 +5,5 @@ workflows:
      scripts:
       - name: Build Android APK
         script: ./gradlew assembleRelease
-    artifacts:
+     artifacts:
       - app/build/outputs/bruh.apk
