@@ -2,7 +2,7 @@ workflows:
   my-workflow:
     scripts:
       - name: Build Android APK
-        working_directory: Instagram-clone
+        working_directory: /usr/bin/git/Instagram-clone
         script: ./gradlew assembleRelease
     artifacts:
       - app/build/outputs/bruh.apk
