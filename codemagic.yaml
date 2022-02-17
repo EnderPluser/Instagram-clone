@@ -1,7 +1,6 @@
 workflows:
   my-workflow:
      name: Apk Build
-     instance_type: mac_mini
      scripts:
       - name: Build Android APK
         script: gradlew build
