@@ -4,6 +4,6 @@ workflows:
      instance_type: mac_mini
      scripts:
       - name: Build Android APK
-        script: ./gradlew assembleRelease
+        script: gradlew build
      artifacts:
       - app/build/outputs/bruh.apk
