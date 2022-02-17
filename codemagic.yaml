@@ -11,6 +11,6 @@ workflows:
       java: 1.8       
      scripts:
       - name: Build Android APK
-        script: ./gradlew assembleRelease 
+        script: ./gradlew assembleDebug
      artifacts:
-      - app/build/outputs/bruh.apk
+      - app/build/outputs/apk/apk-debug.apk
