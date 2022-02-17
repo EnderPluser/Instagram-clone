@@ -2,7 +2,7 @@ workflows:
   my-workflow:
      name: Apk Build
      instance_type: mac_mini
-    scripts:
+     scripts:
       - name: Build Android APK
         script: ./gradlew assembleRelease
     artifacts:
