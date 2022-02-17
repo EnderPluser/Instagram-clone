@@ -3,6 +3,6 @@ workflows:
      name: Apk Build
      scripts:
       - name: Build Android APK
-        script: gradlew build
+        script: ./gradlew assembleRelease 
      artifacts:
       - app/build/outputs/bruh.apk
