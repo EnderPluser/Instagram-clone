@@ -27,8 +27,10 @@ jobs:
 
     - name: Gradle Build Action
       uses: gradle/gradle-build-action@v2.1.3
+    - name: Gradlew Permission
+      run: chmod +x gradlew
     - name: Build with Gradle
-      run: gradlew build
+      run: ./gradlew build
     - name: Assemble APK
       run: gradlew assembleRelease
     - name: Upload Release APK
