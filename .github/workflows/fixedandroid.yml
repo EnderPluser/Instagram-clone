@@ -8,8 +8,9 @@ on:
 
 jobs:
   build:
-
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
+    env:
+      JVM_OPTS: -Xmx6G
 
     steps:
     - uses: actions/checkout@v1
@@ -19,11 +20,24 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: gradle
-  
+
+    - name: Install CMake & Android NDK
+        run: echo "yes" | $ANDROID_HOME/tools/bin/sdkmanager "cmake;3.18.1" "ndk;24.0.7856742" --channel=3 | grep -v = || true
+
     - name: Gradle Build Action
       uses: gradle/gradle-build-action@v2.1.3
+
+    - name: Android Lint
+        run: |
+          chmod +x gradlew
+          ./gradlew --stacktrace lint
     
     - name: Build with Gradle
       run: gradlew build
     - name: Assemble APK
-      run: gradlew assembleDebug 
+      run: gradlew assembleRelease
+    - name: Upload Release APK
+        uses: actions/upload-artifact@v2
+        with:
+          name: app-release.apk
+          path: app/build/outputs/apk/release/
