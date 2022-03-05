@@ -26,12 +26,6 @@ jobs:
 
     - name: Gradle Build Action
       uses: gradle/gradle-build-action@v2.1.3
-
-    - name: Android Lint
-      run:
-          chmod +x gradlew
-          ./gradlew --stacktrace lint
-    
     - name: Build with Gradle
       run: gradlew build
     - name: Assemble APK
