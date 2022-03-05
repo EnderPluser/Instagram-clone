@@ -1,6 +1,7 @@
 name: Apk build
 
 on:
+  workflows_dispatch:
   push:
     branches: [ master ]
   pull_request:
