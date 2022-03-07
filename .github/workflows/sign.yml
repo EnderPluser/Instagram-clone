@@ -27,7 +27,7 @@ jobs:
         name: Use Git Checkout
       - uses: Tlaster/android-sign@v1
         name: Sign app APK
-         with:
+        with:
            debugDirectory:
              app/build/outputs/apk/debug
            signingKeyBase64: ${{ secrets.SIGNING_KEY }}
